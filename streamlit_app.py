@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-
+import pickle
+model = pickle.load(open("model.pkl", "rb"))
 # Title
 st.title("Titanic Survival Prediction")
 
